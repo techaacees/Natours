@@ -1,0 +1,30 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techaacees/Natours.git"
+  },
+  "keywords": [
+    "Nature",
+    "Tour",
+    "in",
+    "nature",
+    "waterfall",
+    "tourism",
+    "homestay",
+    "exotic",
+    "destinations"
+  ],
+  "author": "Ashish Bajracharya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/techaacees/Natours/issues"
+  },
+  "homepage": "https://github.com/techaacees/Natours#readme"
+}
