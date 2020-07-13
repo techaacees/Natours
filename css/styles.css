@@ -199,3 +199,120 @@ body{
     animation: btnAnimation 1s ease-out .75s;
     animation-fill-mode: backwards;
 }   
+
+
+/* ABOUT SECTION */
+.about{
+  margin-top: -25vh;
+  background-color: #f7f7f7;
+  padding-top: 35vh;
+}
+.u-center-text{
+    text-align: center;
+}
+.heading-secondary{
+    
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image:  linear-gradient( to right ,#7ed56fe1, #28b485cc );
+    display: inline-block;
+    -webkit-background-clip: text;
+    color:transparent;
+    transition: all .2s;
+    letter-spacing: 2px;
+    margin-bottom: 8rem;
+}
+.heading-secondary:hover{
+    transform: skew(15deg, 2deg);
+    text-shadow: .5rem  1rem 2rem  rgba(0, 0, 0, .2);
+}
+.row{
+   
+    
+    width: 114rem;
+    content: "";
+    display: table;
+    clear: both;
+    margin: 0 auto;
+    
+}
+
+.col-1-of-2{
+  width:54.4rem;
+  float: left;
+  
+}
+
+.col-1-of-2:not(:last-child){
+    margin-right:5rem;
+}
+
+.heading-tertiary{
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+
+}
+.paragraph{
+    font-size: 1.6rem;
+
+}
+.paragraph:not(:last-child){
+    margin-bottom: 3rem;
+}
+.btn-text:link, .btn-text:visited{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #28b485;
+    border-bottom: 2px solid #28b485;
+    padding: 5px;
+    transition: all .2s;
+}
+.btn-text:hover{
+    background-color:#28b485 ;
+    color: #fff;
+    transform: translateX(-2px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+}
+.btn-text:active{
+   
+    transform: translateX(-2px);
+    box-shadow: 0 1.5rem 1.5rem rgba(0, 0, 0, .5);
+}
+
+.composition{
+    position: relative;
+}
+.composition__photo{
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .5);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 2;
+}
+.composition__photo:hover{
+    transform: scale(1.25);
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, .5);
+    z-index: 3;
+    outline: 1.5rem solid #28b485 ;
+    outline-offset: 2rem;
+    transform: translateY(-1rem);
+}
+.composition:hover .composition__photo:not(:hover){
+    transform: scale(.8);
+}
+
+.composition_photo--p1{
+    left: 0;
+    top: -2rem;
+}
+.composition_photo--p2{
+    right: 0;
+    top: 2rem;    
+}
+.composition_photo--p3{
+    left: 20%;
+    top: 10rem;   
+}
