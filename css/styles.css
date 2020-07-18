@@ -210,6 +210,11 @@ body{
 }
 .u-center-text{
     text-align: center;
+   
+    
+}
+.y-center-text{
+    text-align: center;
 }
 .heading-secondary{
     
@@ -223,6 +228,7 @@ body{
     transition: all .2s;
     letter-spacing: 2px;
     margin-bottom: 8rem;
+   
 }
 .heading-secondary:hover{
     transform: skew(15deg, 2deg);
@@ -236,6 +242,7 @@ body{
     display: table;
     clear: both;
     margin: 0 auto;
+    margin-bottom: 6rem;
     
 }
 
@@ -373,8 +380,11 @@ body{
 /* SECTION TOURS  */
 .section-tours{
     background-color: #f7f7f7;
-    margin-top: -30vh;
-    padding-top: 32vh ;
+    margin-top: -40vh;
+    padding-top: 45vh ;
+    padding-bottom: 20vh;
+    
+    
     
 }
 .card{
@@ -522,3 +532,81 @@ body{
 #5643fa color blue dark
 */
 
+/* SECTION STORIES */
+.section-stories{ 
+    padding: 15rem 0;
+    
+    
+    
+    position: relative;
+}
+.story{
+    width: 75%;
+    margin:0 auto;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, .2);
+    background-color:rgba(255, 255, 255, .6);
+    border-radius: 3px;
+    padding: 6rem;
+    font-size: 1.6rem;
+    padding-left: 9rem;
+    transform: skewX(-12deg);
+}
+.story__shape{
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-shape-outside:circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    position: relative;
+    margin-right: 3rem;
+}
+.story__shape img{
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.story > *{
+    transform: skewX(12deg);
+}
+.story__caption{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s;   
+    backface-visibility: hidden;
+}
+.story:hover .story__caption{
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+.story__shape img{
+    height: 100%;
+    transition: all .5s;
+}
+.story:hover .story__shape img{
+    transform: scale(.9);
+    filter: blur(3px) brightness(60%)
+}
+
+.bg-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .15;
+}
+.bg-video__content{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
